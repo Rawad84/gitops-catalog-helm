@@ -17,7 +17,7 @@ spec:
       source:
         http:
           url: https://download.fedoraproject.org/pub/fedora/linux/releases/37/Cloud/x86_64/images/Fedora-Cloud-Base-37-1.7.x86_64.qcow2
-          certConfigMap: trusted-ca-bundle
+#          certConfigMap: trusted-ca-bundle
   running: true
   template:
     metadata:
@@ -31,8 +31,8 @@ spec:
     spec:
 #      nodeSelector:
 #        node-role.kubernetes.io/baremetal: ""
-      tolerations:
-      - effect: NoSchedule
+#      tolerations:
+#      - effect: NoSchedule
         key: node-role.kubernetes.io/baremetal
       domain:
         cpu:
