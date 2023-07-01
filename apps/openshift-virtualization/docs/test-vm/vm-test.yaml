@@ -61,6 +61,7 @@ spec:
           requests:
             memory: 4Gi
       evictionStrategy: LiveMigrate
+      restartPolicy: Always
       networks:
         - name: default
           pod: {}
